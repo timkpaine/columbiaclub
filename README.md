@@ -1,1 +1,5 @@
 # columbiaclub
+
+4 W 43rd St
+
+Building Value: $22mm [source](https://www.propertyshark.com/mason/Property/20373/4-W-43-St-New-York-NY-10036/)
