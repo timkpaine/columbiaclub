@@ -19,7 +19,6 @@ const styles = theme => ({
     paddingBottom: 20
   },
   grid: {
-    width: 1000
   }
 })
 
