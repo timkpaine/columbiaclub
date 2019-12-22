@@ -1,42 +1,45 @@
-import React, { Component } from 'react';
-import withStyles from '@material-ui/styles/withStyles';
+/* eslint-disable react/forbid-prop-types */
 import Button from '@material-ui/core/Button';
+import withStyles from '@material-ui/styles/withStyles';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-const styles = theme => ({
+const styles = (theme) => ({
   primary: {
     marginRight: theme.spacing(2),
   },
   secondary: {
     background: theme.palette.secondary['100'],
-    color: 'white'
+    color: 'white',
   },
   spaceTop: {
-    marginTop: 20
-  }
-})
+    marginTop: 20,
+  },
+});
 
-class ButtonBar extends Component {
+const ButtonBar = (props) => {
+  const { classes } = props;
 
-  render() {
-    const { classes } = this.props;
-
-    return (
-      <div className={classes.spaceTop}>
-        <Button
-          className={classes.primary}
-        >
+  return (
+    <div className={classes.spaceTop}>
+      <Button
+        className={classes.primary}
+      >
           Delete
-        </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          className={classes.secondary}
-        >
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.secondary}
+      >
           Edit
-        </Button>
-      </div>
-    )
-  }
-}
+      </Button>
+    </div>
+  );
+};
+
+ButtonBar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(ButtonBar);

@@ -1,34 +1,46 @@
-import React, { Component } from 'react';
-import withStyles from '@material-ui/styles/withStyles';
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+/* eslint-disable react/forbid-prop-types */
+import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const styles = theme => ({
+// const styles = (theme) => ({
+const styles = () => ({
   link: {
     textDecoration: 'none',
-    color: 'inherit'
+    color: 'inherit',
   },
   text: {
     display: 'inline-block',
-    verticalAlign: 'text-bottom'
-  }
+    verticalAlign: 'text-bottom',
+  },
 });
 
-class Back extends Component {
-  render() {
-    const { classes } = this.props;
-    return (
-      <div>
-        <Typography variant="h6" gutterBottom>
-          <Link className={classes.link} to={{ pathname: "/" }}>
-            <KeyboardArrowLeft />
-            <span className={classes.text}>Back</span>
-          </Link>
-        </Typography>
-      </div>
-    )
-  }
-}
+const Back = (props) => {
+  const { classes } = props;
+  return (
+    <div>
+      <Typography variant="h6" gutterBottom>
+        <Link
+          className={classes.link}
+          to={
+            {
+              pathname: '/',
+            }
+          }
+        >
+          <KeyboardArrowLeft />
+          <span className={classes.text}>Back</span>
+        </Link>
+      </Typography>
+    </div>
+  );
+};
+
+Back.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withRouter(withStyles(styles)(Back));

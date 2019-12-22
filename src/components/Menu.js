@@ -1,19 +1,19 @@
 const Menu = [
   {
-    label: "Home",
-    pathname: "/"
+    label: 'Home',
+    pathname: '/',
   },
   {
-    label: "About Us",
-    pathname: "/about"
+    label: 'About Us',
+    pathname: '/about',
   },
   {
-    label: "Club",
-    pathname: "/club"
+    label: 'Club',
+    pathname: '/club',
   },
   {
-    label: "Signup",
-    pathname: "/signup"
+    label: 'Signup',
+    pathname: '/signup',
   },
   // {
   //   label: "Github",

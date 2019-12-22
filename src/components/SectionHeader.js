@@ -1,32 +1,38 @@
-import React, { Component } from 'react';
-import withStyles from '@material-ui/styles/withStyles';
+/* eslint-disable react/forbid-prop-types */
 import Typography from '@material-ui/core/Typography';
+import withStyles from '@material-ui/styles/withStyles';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-const styles = theme => ({
-    sectionContainer: {
-        marginTop: theme.spacing(4),
-        marginBottom: theme.spacing(4)
-    },
-    title: {
-        fontWeight: 'bold'
-    }
+const styles = (theme) => ({
+  sectionContainer: {
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
+  },
+  title: {
+    fontWeight: 'bold',
+  },
 });
 
-class SectionHeader extends Component {
-    render() {
-        const { classes, title, subtitle } = this.props;
-        return (
-            <div className={classes.sectionContainer}>
-                <Typography variant="subtitle1" className={classes.title}>
-                    {title}
-                </Typography>
-                <Typography variant="body1" gutterBottom>
-                    {subtitle}
-                </Typography>
-            </div>
-        )
-    }
-}
+const SectionHeader = (props) => {
+  const { classes, title, subtitle } = props;
+  return (
+    <div className={classes.sectionContainer}>
+      <Typography variant="subtitle1" className={classes.title}>
+        {title}
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        {subtitle}
+      </Typography>
+    </div>
+  );
+};
+
+SectionHeader.propTypes = {
+  classes: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
 
 export default withRouter(withStyles(styles)(SectionHeader));
