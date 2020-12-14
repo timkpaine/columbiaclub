@@ -1,6 +1,6 @@
 # columbiaclub
 
-[![Build Status](https://travis-ci.org/timkpaine/columbiaclub.svg?branch=master)](https://travis-ci.org/timkpaine/columbiaclub)
+[![Build Status](https://github.com/timkpaine/columbiaclub/workflows/Build%20Status/badge.svg)](https://github.com/timkpaine/columbiaclub/actions/)
 
 4 W 43rd St
 
