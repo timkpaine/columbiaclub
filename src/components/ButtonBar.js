@@ -25,14 +25,14 @@ const ButtonBar = (props) => {
       <Button
         className={classes.primary}
       >
-          Delete
+        Delete
       </Button>
       <Button
         variant="contained"
         color="primary"
         className={classes.secondary}
       >
-          Edit
+        Edit
       </Button>
     </div>
   );

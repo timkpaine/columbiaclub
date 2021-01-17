@@ -94,12 +94,12 @@ render() {
             className={classes.mobileStepper}
             nextButton={(
               <Button size="small" onClick={this.handleNext} disabled={activeStep === maxSteps - 1}>
-                  Next
+                Next
               </Button>
               )}
             backButton={(
               <Button size="small" onClick={this.handleBack} disabled={activeStep === 0}>
-                  Back
+                Back
               </Button>
               )}
           />
@@ -114,7 +114,7 @@ render() {
         </div>
         <div>
           <Button component={Link} to="/club" variant="contained" onClick={this.handleClose} color="primary" autoFocus>
-                The Club
+            The Club
           </Button>
         </div>
       </div>

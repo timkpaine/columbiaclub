@@ -55,7 +55,6 @@ const styles = (theme) => ({
   },
 });
 
-
 class AboutUs extends Component {
   componentDidMount() {}
 
@@ -75,11 +74,11 @@ class AboutUs extends Component {
                   <div className={classes.block}>
                     <Typography variant="h6" gutterBottom>About Us</Typography>
                     <Typography variant="body1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                             commodo consequat
-                                 .
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat
+                      .
                     </Typography>
                   </div>
                 </div>
@@ -99,8 +98,8 @@ class AboutUs extends Component {
                         to="/signup"
                         className={classes.outlinedButtom}
                       >
-Sign
-                             Up
+                        Sign
+                        Up
                       </Button>
                       <Button variant="outlined" className={classes.outlinedButtom}>
                         Email us

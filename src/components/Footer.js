@@ -49,7 +49,7 @@ const Footer = (props) => {
             {
         /* <img width={20} src={logo} alt="" /> */}
             <span>
-        CCNY
+              CCNY
             </span>
           </Link>
         </Typography>

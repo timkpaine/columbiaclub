@@ -180,10 +180,10 @@ class Main extends Component {
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom color="primary">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                             commodo
-                                 consequat.
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>
@@ -193,7 +193,7 @@ class Main extends Component {
                     variant="contained"
                     className={classes.actionButtom}
                   >
-                             Club
+                    Club
                   </Button>
                 </div>
               </Paper>
@@ -206,13 +206,13 @@ class Main extends Component {
                     className={classes.titleLight}
                     gutterBottom
                   >
-Duis aute
-                             irure
+                    Duis aute
+                    irure
                   </Typography>
                   <Typography variant="body1" gutterBottom color="primary">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                     culpa qui officia deserunt mollit anim id est laborum.
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>
@@ -225,7 +225,7 @@ Duis aute
                     variant="contained"
                     className={classes.actionButtom}
                   >
-                             Contact
+                    Contact
                   </Button>
                 </div>
               </Paper>
